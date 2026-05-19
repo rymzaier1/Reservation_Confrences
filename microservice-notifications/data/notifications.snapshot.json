@@ -1,0 +1,42 @@
+[
+  {
+    "id": "292cd5ed-92ad-4ed6-a115-8703334cce8f",
+    "user_id": "6ea5cefb-726c-4f7c-868d-2c23a7af6a1e",
+    "type": "BIENVENUE",
+    "message": "Bienvenue Rym ! Votre compte a été créé avec succès.",
+    "statut": "non_lu",
+    "created_at": "2026-05-14T00:15:24.423Z"
+  },
+  {
+    "id": "382ff62e-2334-472f-ac5c-0f40379637af",
+    "user_id": "8fd9c8eb-8405-478e-b33e-ccf27447537b",
+    "type": "RESERVATION_CONFIRMEE",
+    "message": "Votre réservation pour \"Salle de conférence A\" du 2026-05-01T09:00:00 au 2026-05-01T11:00:00 a été enregistrée.",
+    "statut": "non_lu",
+    "created_at": "2026-05-14T00:22:00.788Z"
+  },
+  {
+    "id": "48e85b9b-5b86-4bd3-8f7e-bac6280b1b00",
+    "user_id": "8fd9c8eb-8405-478e-b33e-ccf27447537b",
+    "type": "RESERVATION_CONFIRMEE",
+    "message": "Votre réservation pour \"Salle de conférence A\" du 2026-05-01T09:00:00 au 2026-05-01T11:00:00 a été enregistrée.",
+    "statut": "non_lu",
+    "created_at": "2026-05-19T12:23:44.914Z"
+  },
+  {
+    "id": "a4e36786-c65b-409d-9df9-150794a18356",
+    "user_id": "8fd9c8eb-8405-478e-b33e-ccf27447537b",
+    "type": "BIENVENUE",
+    "message": "Bienvenue yasmin ! Votre compte a été créé avec succès.",
+    "statut": "non_lu",
+    "created_at": "2026-05-14T00:17:21.790Z"
+  },
+  {
+    "id": "d397c150-33cf-46d4-b156-ebab7fcefb37",
+    "user_id": "3563b0be-9e28-4bd3-8a36-5859f5d3126f",
+    "type": "BIENVENUE",
+    "message": "Bienvenue aa ! Votre compte a été créé avec succès.",
+    "statut": "non_lu",
+    "created_at": "2026-05-19T12:23:22.164Z"
+  }
+]

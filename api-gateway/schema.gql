@@ -1,0 +1,44 @@
+type User {
+  id: String!
+  nom: String!
+  email: String!
+  telephone: String
+}
+
+type Reservation {
+  id: String!
+  user_id: String!
+  ressource: String!
+  date_debut: String!
+  date_fin: String!
+  statut: String!
+  notes: String
+}
+
+type Notification {
+  id: String!
+  user_id: String!
+  type: String!
+  message: String!
+  statut: String!
+  created_at: String!
+}
+
+type Query {
+  user(id: String!): User
+  users(query: String): [User]
+  reservation(id: String!): Reservation
+  reservations(user_id: String, statut: String): [Reservation]
+  notifications(user_id: String!): [Notification]
+}
+
+type Mutation {
+  createUser(nom: String!, email: String!, telephone: String, password: String!): User
+  updateUser(id: String!, nom: String!, email: String!, telephone: String): User
+  deleteUser(id: String!): Boolean
+  createReservation(user_id: String!, ressource: String!, date_debut: String!, date_fin: String!, notes: String): Reservation
+  updateReservation(id: String!, statut: String, notes: String): Reservation
+  deleteReservation(id: String!): Boolean
+  sendNotification(user_id: String!, type: String!, message: String!): Notification
+  markNotificationAsRead(id: String!): Boolean
+}

@@ -1,0 +1,62 @@
+syntax = "proto3";
+package reservation;
+
+message Reservation {
+  string id = 1;
+  string user_id = 2;
+  string ressource = 3;
+  string date_debut = 4;
+  string date_fin = 5;
+  string statut = 6;
+  string notes = 7;
+}
+
+message GetReservationRequest {
+  string reservation_id = 1;
+}
+message GetReservationResponse {
+  Reservation reservation = 1;
+}
+
+message CreateReservationRequest {
+  string user_id = 1;
+  string ressource = 2;
+  string date_debut = 3;
+  string date_fin = 4;
+  string notes = 5;
+}
+message CreateReservationResponse {
+  Reservation reservation = 1;
+}
+
+message SearchReservationsRequest {
+  string user_id = 1;
+  string statut = 2;
+}
+message SearchReservationsResponse {
+  repeated Reservation reservations = 1;
+}
+
+message UpdateReservationRequest {
+  string reservation_id = 1;
+  string statut = 2;
+  string notes = 3;
+}
+message UpdateReservationResponse {
+  Reservation reservation = 1;
+}
+
+message DeleteReservationRequest {
+  string reservation_id = 1;
+}
+message DeleteReservationResponse {
+  bool success = 1;
+}
+
+service ReservationService {
+  rpc GetReservation(GetReservationRequest) returns (GetReservationResponse);
+  rpc CreateReservation(CreateReservationRequest) returns (CreateReservationResponse);
+  rpc SearchReservations(SearchReservationsRequest) returns (SearchReservationsResponse);
+  rpc UpdateReservation(UpdateReservationRequest) returns (UpdateReservationResponse);
+  rpc DeleteReservation(DeleteReservationRequest) returns (DeleteReservationResponse);
+}

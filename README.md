@@ -1,6 +1,5 @@
 # Plateforme de Réservation Intelligente
-## Mini-projet Microservices — SoA et Microservices A.U. 2025/2026
-### Enseignant : Dr. Salah Gontara — Classe : 4Info
+## Mini-projet Microservices — SoA et Microservices 
 
 ---
 
